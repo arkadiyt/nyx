@@ -79,7 +79,7 @@ try:
     url = ATTR['url'],
     packages = ['nyx', 'nyx.panel'],
     keywords = 'tor onion controller',
-    install_requires = ['stem>=1.7.0'],
+    install_requires = ['stem @ git+https://github.com/torproject/stem.git#egg=stem'],
     package_data = {'nyx': ['settings/*']},
     entry_points = {'console_scripts': ['nyx = nyx.__init__:main']},
     classifiers = [
